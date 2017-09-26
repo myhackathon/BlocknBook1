@@ -3,12 +3,16 @@
     package="com.charitytrails.blocknbook">
 
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        android:name=".Controller.CharityApplication"
+        android:allowBackup="true" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />>
+        <activity android:name=".View.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,7 +21,11 @@
         </activity>
     <activity android:name=".View.HotelListActivity" />
     <activity android:name=".View.SelectedHotelActivity" />
-    <activity android:name=".View.BookHotelActivity"></activity>
+        <activity android:name=".View.FullWalletConfirmationButtonActivity" />
+        <activity android:name=".View.OrderCompleteActivity" />
+        <activity android:name=".MainActivity" />
+
+        <activity android:name=".View.BookHotelActivity"></activity>
 
     <provider
         android:name=".Utils.HotelsProvider"
