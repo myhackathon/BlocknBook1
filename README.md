@@ -1,3 +1,3 @@
 # Charity Trails
 
-IBM Hackathon
+IBM Hackathon - Unchain The Frame 2017
