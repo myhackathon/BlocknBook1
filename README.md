@@ -1,1 +1,3 @@
-# BlocknBook
+# Charity Trails
+
+IBM Hackathon
